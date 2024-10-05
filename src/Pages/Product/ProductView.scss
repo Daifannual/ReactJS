@@ -1,0 +1,121 @@
+.container {
+  background: #e6ebf2;
+  height: 100%;
+  width: 100%;
+margin-bottom: 4rem;
+
+  .main-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 4rem;
+    background: #e6ebf2;
+  }
+
+.search {
+ padding: 0.5rem;
+background: #e1e1e1;
+border-radius: 0.5rem;
+}
+  .card {
+    background-color: #ffffff;
+    width: 24rem;
+    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.003);
+    border-radius: 0.75rem;
+padding-top: 1.5rem;
+
+    figure {
+      margin: 0;
+      img {
+        width: 50%;
+        height: 9rem;
+        object-fit: contain;
+      }
+    }
+
+    .card-body {
+      padding: 1.25rem;
+
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: #4b5563;
+      }
+
+      .card-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        font-weight: 500;
+        font-size: larger;
+
+        .btn {
+          padding: 0.5rem 1rem;
+          border-radius: 0.5rem;
+          background-color: #252525;
+          color: #ffffff;
+          font-size: 1rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #3e3e3e;
+          }
+        }
+      }
+    }
+  }
+
+  .input {
+    margin: auto;
+    margin-bottom: 1.5rem;
+    border-radius:0 0 1rem 1rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    width: 60%;
+
+    input {
+      flex-grow: 1;
+      border: none;
+      outline: none;
+      padding: 0.5rem;
+      font-size: 1rem;
+
+      &::placeholder {
+        color: #9ca3af; // Warna placeholder
+        opacity: 1; // Mengatur opacity placeholder
+      }
+    }
+
+    svg {
+      height: 1rem;
+      width: 1rem;
+      color: currentColor;
+      opacity: 0.7;
+    }
+  }
+
+  .load {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4b5563;
+  }
+
+  .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Ganti dengan jumlah baris yang kamu inginkan */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

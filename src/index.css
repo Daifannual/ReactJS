@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Untuk browser berbasis WebKit */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Untuk Firefox */
+  .no-scrollbar {
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
